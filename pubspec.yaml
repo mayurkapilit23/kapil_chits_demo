@@ -17,6 +17,7 @@ dependencies:
   dotted_line: ^3.2.3
   torn_ticket: ^0.1.0
   iconify_flutter:
+  flutter_svg:
 
 
 dev_dependencies:

@@ -1,12 +1,14 @@
 import 'dart:ui';
 
 class AppColors {
+  //payment screens colors
   static const Color dottedLineColor = Color(0xffEBEBEB);
   static const Color buttonBgColor = Color(0xff0F1894);
   static const Color paymentFailedBgColor = Color(0xffFFD8D8);
   static const Color paymentSuccessBgColor = Color(0xff0F1894);
   static const Color paymentPendingBgColor = Color(0xffFFEBCC);
   static const Color paymentPendingIconColor = Color(0xffFFBC54);
+  static const Color paymentPrimaryColor = Color(0xffffffff);
 
   //account screens colors
   static const Color accountPrimaryColor = Color(0xffffffff);
