@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kapil_chits_demo/screens/profile_screens/app_language_screen.dart';
 
 import '../../core/app_colors.dart';
 
@@ -73,7 +74,10 @@ class _AppAppearanceScreenState extends State<AppAppearanceScreen> {
                     InkWell(
                       borderRadius: BorderRadius.circular(10),
                       splashColor: Colors.transparent,
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (
+                            context) => AppLanguageScreen()));
+                      },
                       child: Container(
                         padding: EdgeInsets.all(20),
 
@@ -130,7 +134,10 @@ class _AppAppearanceScreenState extends State<AppAppearanceScreen> {
               ),
             ),
 
-            height: MediaQuery.of(context).size.height * 0.45,
+            height: MediaQuery
+                .of(context)
+                .size
+                .height * 0.45,
             width: double.infinity,
             child: Padding(
               padding: const EdgeInsets.all(15.0),

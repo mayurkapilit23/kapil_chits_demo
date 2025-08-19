@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:iconify_flutter/iconify_flutter.dart';
-import 'package:iconify_flutter/icons/zondicons.dart';
+import 'package:kapil_chits_demo/core/app_colors.dart';
 
-class CustomListTile extends StatelessWidget {
-  final String text;
+class CustomTileLanguage extends StatelessWidget {
   final VoidCallback onTap;
-
-  const CustomListTile({super.key, required this.text, required this.onTap});
+  final String text;
+  const CustomTileLanguage({super.key, required this.onTap, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -16,10 +14,6 @@ class CustomListTile extends StatelessWidget {
       child: InkWell(
         splashColor: Colors.transparent,
         borderRadius: BorderRadius.circular(10),
-        // onTap: () async {
-        //   await Future.delayed(Duration(milliseconds: 200));
-        //   onTap();
-        // },
         onTap: onTap,
         child: Container(
           // height: 55,
@@ -29,7 +23,7 @@ class CustomListTile extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(text, style: TextStyle(fontWeight: FontWeight.bold)),
-              Icon(Icons.arrow_forward,size: 20,),
+              Icon(Icons.done,color: AppColors.paymentSuccessBgColor,),
             ],
           ),
         ),

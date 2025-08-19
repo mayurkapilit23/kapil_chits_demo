@@ -132,7 +132,7 @@ class PaymentSummaryScreen extends StatelessWidget {
               ),
               Spacer(),
 
-              CustomButton(onPressed: () {  }, text: 'Continue',)
+              CustomButton(onPressed: () {}, text: 'Continue'),
             ],
           ),
         ),
