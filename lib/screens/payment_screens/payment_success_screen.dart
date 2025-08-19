@@ -142,7 +142,7 @@ class PaymentSuccessScreen extends StatelessWidget {
                             const SizedBox(height: 30),
 
                             // Done Button
-                            CustomButton(),
+                            CustomButton(onPressed: () {  }, text: 'Done',),
 
                             const SizedBox(height: 15),
 

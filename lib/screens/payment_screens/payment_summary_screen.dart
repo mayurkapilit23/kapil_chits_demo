@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kapil_chits_demo/widgets/custom_pay_via_tile.dart';
 
 import '../../core/app_colors.dart';
+import '../../widgets/custom_button.dart';
 import '../../widgets/custom_payment_method_card.dart';
 
 class PaymentSummaryScreen extends StatelessWidget {
@@ -129,6 +130,9 @@ class PaymentSummaryScreen extends StatelessWidget {
                 subTitle: 'andrew.ainsley@yourdomain.com',
                 image: debitCardImage,
               ),
+              Spacer(),
+
+              CustomButton(onPressed: () {  }, text: 'Continue',)
             ],
           ),
         ),
