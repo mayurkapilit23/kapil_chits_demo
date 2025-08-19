@@ -47,7 +47,6 @@ class AppLanguageScreen extends StatelessWidget {
                     endIndent: 16.0, // Space from the right edge
                   ),
                   CustomTileLanguage(onTap: () {}, text: 'Japanese'),
-
                 ],
               ),
             ),

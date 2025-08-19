@@ -24,11 +24,11 @@ class CustomAccountInfoTile extends StatelessWidget {
       child: InkWell(
         splashColor: Colors.transparent,
         borderRadius: BorderRadius.circular(8),
-        onTap: () {},
+        onTap: onTap,
         child: Container(
           width: 382,
           height: 85,
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.all(15),
           // decoration: BoxDecoration(
           //   // color: AppColors.accountPrimaryColor,
           //   borderRadius: BorderRadius.circular(8),
@@ -63,10 +63,12 @@ class CustomAccountInfoTile extends StatelessWidget {
                   ),
                 ],
               ),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.arrow_forward, size: 20),
-              ),
+              Icon(Icons.arrow_forward, size: 20),
+
+              // IconButton(
+              //   onPressed: () {},
+              //   icon: Icon(Icons.arrow_forward, size: 20),
+              // ),
             ],
           ),
         ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kapil_chits_demo/screens/help_&_support_screens/help_support_screen.dart';
 import 'package:kapil_chits_demo/screens/profile_screens/app_appearance_screen.dart';
 import 'package:kapil_chits_demo/screens/profile_screens/notification_screen.dart';
+import 'package:kapil_chits_demo/screens/profile_screens/personal_info_screen.dart';
 
 import '../../core/app_colors.dart';
 import '../../widgets/custom_account_info_tile.dart';
@@ -35,7 +36,13 @@ class AccountScreen extends StatelessWidget {
                   text: 'Priyal Sharma',
                   subText: '83873738738',
                   imageUrl: profileImage,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => PersonalInfoScreen(),
+                      ),
+                    );
+                  },
                 ),
                 SizedBox(height: 20),
                 CustomAccountInfoTile(
