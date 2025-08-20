@@ -98,7 +98,7 @@ Widget _buildNotificationSettingSwitchTile({
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(text, style: TextStyle(fontWeight: FontWeight.w600,fontSize: 16)),
+        Text(text, style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16)),
         Switch(
           activeColor: AppColors.paymentSuccessBgColor,
           value: isChecked,
