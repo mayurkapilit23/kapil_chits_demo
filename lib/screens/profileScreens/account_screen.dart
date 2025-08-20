@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kapil_chits_demo/screens/profileScreens/account_security_screen.dart';
 import 'package:kapil_chits_demo/screens/profileScreens/personal_info_screen.dart';
 
 import '../../core/app_colors.dart';
@@ -97,7 +98,14 @@ class AccountScreen extends StatelessWidget {
                       ),
                       CustomListTileWithIcon(
                         text: 'Account & Security',
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => AccountSecurityScreen(),
+                            ),
+                          );
+                        },
                         iconData: Icons.security,
                       ),
                       CustomListTileWithIcon(

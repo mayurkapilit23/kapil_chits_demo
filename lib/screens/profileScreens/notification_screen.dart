@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kapil_chits_demo/screens/profileScreens/notification_settings_screen.dart';
 
 import '../../core/app_colors.dart';
 
@@ -16,7 +17,18 @@ class NotificationScreen extends StatelessWidget {
           'Notification',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
-        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.settings))],
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => NotificationSettingsScreen(),
+                ),
+              );
+            },
+            icon: Icon(Icons.settings),
+          ),
+        ],
       ),
       body: SafeArea(
         child: Padding(

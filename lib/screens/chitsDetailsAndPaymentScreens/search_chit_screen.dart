@@ -33,13 +33,15 @@ class SearchChitScreen extends StatelessWidget {
               ReusableChitDropdown(
                 label: 'Chit Value',
                 value: '10,000',
-                items: ['10,000', '20,000', '30,000'], hint: 'Select value',
+                items: ['10,000', '20,000', '30,000'],
+                hint: 'Select value',
               ),
               SizedBox(height: 20),
               ReusableChitDropdown(
                 label: 'Branch',
                 value: '10,000',
-                items: ['10,000', '20,000', '30,000'], hint: 'Select branch',
+                items: ['10,000', '20,000', '30,000'],
+                hint: 'Select branch',
               ),
               SizedBox(height: 20),
               ReusableChitDropdown(
@@ -58,10 +60,11 @@ class SearchChitScreen extends StatelessWidget {
                   "October",
                   "November",
                   "December",
-                ], hint: 'Select Period',
+                ],
+                hint: 'Select Period',
               ),
               Spacer(),
-              CustomButton(onPressed: (){}, text: 'Search')
+              CustomButton(onPressed: () {}, text: 'Search'),
             ],
           ),
         ),
