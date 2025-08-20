@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kapil_chits_demo/screens/help_&_support_screens/help_support_screen.dart';
+import 'package:kapil_chits_demo/screens/payment_screens/payment_summary_screen.dart';
 import 'package:kapil_chits_demo/screens/profile_screens/app_appearance_screen.dart';
 import 'package:kapil_chits_demo/screens/profile_screens/notification_screen.dart';
 import 'package:kapil_chits_demo/screens/profile_screens/personal_info_screen.dart';
@@ -73,7 +74,13 @@ class AccountScreen extends StatelessWidget {
                       ),
                       CustomListTileWithIcon(
                         text: 'Payment Methods',
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => PaymentSummaryScreen(),
+                            ),
+                          );
+                        },
                         iconData: Icons.payment,
                       ),
                       CustomListTileWithIcon(
