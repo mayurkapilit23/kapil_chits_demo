@@ -1,15 +1,15 @@
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
-import 'package:kapil_chits_demo/screens/payment_screens/payment_failed_screen.dart';
-import 'package:kapil_chits_demo/screens/payment_screens/payment_pending_screen.dart';
+import 'package:kapil_chits_demo/screens/chitsDetailsAndPaymentScreens/payment_failed_screen.dart';
+import 'package:kapil_chits_demo/screens/chitsDetailsAndPaymentScreens/payment_success_screen.dart';
 import 'package:torn_ticket/torn_ticket.dart';
 
 import '../../core/app_colors.dart';
 import '../../widgets/custom_button.dart';
 import '../../widgets/custom_info_card.dart';
 
-class PaymentSuccessScreen extends StatelessWidget {
-  const PaymentSuccessScreen({super.key});
+class PaymentPendingScreen extends StatelessWidget {
+  const PaymentPendingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +20,7 @@ class PaymentSuccessScreen extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              // TextButton(onPressed: () {}, child: Text('Success')),
               TextButton(
                 onPressed: () {
                   Navigator.push(
@@ -36,17 +37,17 @@ class PaymentSuccessScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => PaymentPendingScreen(),
+                      builder: (context) => PaymentSuccessScreen(),
                     ),
                   );
                 },
-                child: Text('Pending'),
+                child: Text('Success'),
               ),
             ],
           ),
         ),
       ),
-      backgroundColor: AppColors.paymentSuccessBgColor,
+      backgroundColor: AppColors.paymentPendingBgColor,
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -82,13 +83,13 @@ class PaymentSuccessScreen extends StatelessWidget {
                         child: Column(
                           children: [
                             const Icon(
-                              Icons.done,
-                              color: Colors.green,
+                              Icons.pending,
+                              color: AppColors.paymentPendingIconColor,
                               size: 60,
                             ),
                             const SizedBox(height: 25),
                             const Text(
-                              "Payment Success",
+                              "Payment Pending",
                               style: TextStyle(
                                 fontSize: 22,
                                 fontWeight: FontWeight.bold,
@@ -96,7 +97,7 @@ class PaymentSuccessScreen extends StatelessWidget {
                             ),
                             const SizedBox(height: 15),
                             const Text(
-                              "Your payment for Kapil Chitfund has been successfully done",
+                              "Payment for Kapil  Chitfund is processing. We will let you know once done",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontSize: 14,
@@ -142,7 +143,7 @@ class PaymentSuccessScreen extends StatelessWidget {
                             const SizedBox(height: 30),
 
                             // Done Button
-                            CustomButton(onPressed: () {  }, text: 'Done',),
+                            CustomButton(onPressed: () {}, text: 'Done'),
 
                             const SizedBox(height: 15),
 
@@ -150,7 +151,7 @@ class PaymentSuccessScreen extends StatelessWidget {
                             TextButton(
                               onPressed: () {},
                               child: const Text(
-                                "Download Receipt",
+                                "Back to home",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: AppColors.buttonBgColor,

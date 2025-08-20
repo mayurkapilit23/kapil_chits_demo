@@ -1,8 +1,9 @@
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
 import 'package:kapil_chits_demo/core/app_colors.dart';
-import 'package:kapil_chits_demo/screens/payment_screens/payment_pending_screen.dart';
-import 'package:kapil_chits_demo/screens/payment_screens/payment_success_screen.dart';
+import 'package:kapil_chits_demo/screens/chitsDetailsAndPaymentScreens/payment_pending_screen.dart';
+import 'package:kapil_chits_demo/screens/chitsDetailsAndPaymentScreens/payment_success_screen.dart';
+
 import 'package:kapil_chits_demo/widgets/custom_button.dart';
 import 'package:torn_ticket/torn_ticket.dart';
 

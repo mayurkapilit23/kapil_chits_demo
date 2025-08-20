@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:kapil_chits_demo/screens/help_&_support_screens/help_support_screen.dart';
-import 'package:kapil_chits_demo/screens/payment_screens/payment_summary_screen.dart';
-import 'package:kapil_chits_demo/screens/profile_screens/app_appearance_screen.dart';
-import 'package:kapil_chits_demo/screens/profile_screens/notification_screen.dart';
-import 'package:kapil_chits_demo/screens/profile_screens/personal_info_screen.dart';
+import 'package:kapil_chits_demo/screens/profileScreens/personal_info_screen.dart';
 
 import '../../core/app_colors.dart';
 import '../../widgets/custom_account_info_tile.dart';
 import '../../widgets/custom_list_tile_with_icon.dart';
+import '../chitsDetailsAndPaymentScreens/payment_summary_screen.dart';
+import '../helpAnSupportScreens/help_support_screen.dart';
+import 'app_appearance_screen.dart';
+import 'notification_screen.dart';
 
 class AccountScreen extends StatelessWidget {
   const AccountScreen({super.key});

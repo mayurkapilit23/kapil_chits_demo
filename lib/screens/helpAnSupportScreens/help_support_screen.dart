@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kapil_chits_demo/core/app_colors.dart';
-import 'package:kapil_chits_demo/screens/help_&_support_screens/privacy_policy_screen.dart';
-import 'package:kapil_chits_demo/screens/help_&_support_screens/terms_of_service_screen.dart';
+import 'package:kapil_chits_demo/screens/helpAnSupportScreens/privacy_policy_screen.dart';
+import 'package:kapil_chits_demo/screens/helpAnSupportScreens/terms_of_service_screen.dart';
 
 import '../../widgets/custom_list_tile.dart';
 import 'contact_support_screen.dart';

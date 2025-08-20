@@ -31,7 +31,7 @@ class CustomListTileWithIcon extends StatelessWidget {
           // height: 55,
           width: double.infinity,
           // padding: EdgeInsets.all(20),
-          padding: EdgeInsets.symmetric(vertical: 20, horizontal: 25),
+          padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

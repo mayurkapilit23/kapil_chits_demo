@@ -9,6 +9,8 @@ class AppColors {
   static const Color paymentPendingBgColor = Color(0xffFFEBCC);
   static const Color paymentPendingIconColor = Color(0xffFFBC54);
   static const Color paymentPrimaryColor = Color(0xffffffff);
+  static const Color dropDownBgColor = Color(0xffFAFAFA);
+
 
   //account screens colors
   static const Color accountPrimaryColor = Color(0xffffffff);

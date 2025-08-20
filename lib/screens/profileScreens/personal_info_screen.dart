@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kapil_chits_demo/core/app_colors.dart';
-import 'package:kapil_chits_demo/screens/profile_screens/account_screen.dart';
+
+import 'account_screen.dart';
 
 class PersonalInfoScreen extends StatelessWidget {
   const PersonalInfoScreen({super.key});

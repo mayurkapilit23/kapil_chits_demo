@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:kapil_chits_demo/screens/profile_screens/app_language_screen.dart';
+
 
 import '../../core/app_colors.dart';
+import 'app_language_screen.dart';
 
 class AppAppearanceScreen extends StatefulWidget {
   const AppAppearanceScreen({super.key});
