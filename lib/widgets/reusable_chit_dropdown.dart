@@ -5,13 +5,14 @@ import '../core/app_colors.dart';
 class ReusableChitDropdown extends StatelessWidget {
   final String label;
   final String value;
+  final String hint;
   final List<String> items;
 
   const ReusableChitDropdown({
     super.key,
     required this.label,
     required this.value,
-    required this.items,
+    required this.items, required this.hint,
   });
 
   @override
@@ -34,6 +35,7 @@ class ReusableChitDropdown extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
           ),
           child: DropdownButtonFormField<String>(
+            hint: Text(hint),
             value: value,
             items: items
                 .map((item) => DropdownMenuItem(value: item, child: Text(item)))

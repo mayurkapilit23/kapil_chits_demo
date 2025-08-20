@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:kapil_chits_demo/core/app_colors.dart';
-import 'package:kapil_chits_demo/widgets/custom_button.dart';
-import 'package:kapil_chits_demo/widgets/reusable_chit_dropdown.dart';
 
-class JoinChitScreen extends StatelessWidget {
-  const JoinChitScreen({super.key});
+import '../../core/app_colors.dart';
+import '../../widgets/custom_button.dart';
+import '../../widgets/reusable_chit_dropdown.dart';
+
+class SearchChitScreen extends StatelessWidget {
+  const SearchChitScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class JoinChitScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Join Chit',
+                'Search Chits',
                 style: TextStyle(fontWeight: FontWeight.w700, fontSize: 30),
               ),
               SizedBox(height: 10),
@@ -36,7 +37,13 @@ class JoinChitScreen extends StatelessWidget {
               ),
               SizedBox(height: 20),
               ReusableChitDropdown(
-                label: 'Chit month',
+                label: 'Branch',
+                value: '10,000',
+                items: ['10,000', '20,000', '30,000'], hint: 'Select branch',
+              ),
+              SizedBox(height: 20),
+              ReusableChitDropdown(
+                label: 'Chit Period',
                 value: 'January',
                 items: [
                   "January",
@@ -51,10 +58,10 @@ class JoinChitScreen extends StatelessWidget {
                   "October",
                   "November",
                   "December",
-                ], hint: 'Select month',
+                ], hint: 'Select Period',
               ),
               Spacer(),
-              CustomButton(onPressed: (){}, text: 'Submit')
+              CustomButton(onPressed: (){}, text: 'Search')
             ],
           ),
         ),
